@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Minha Página</title>
+	</head>
+	<body>
+		
+		<h:form>
+			Mensagem 1: <h:inputText value="${mensagemBean.mensagem1}">
+			</h:inputText>
+			
+			Mensagem 2: <h:inputText value="${mensagemBean.mensagem2}">
+			</h:inputText>
+			
+			<h:commandButton id="inverter" 
+				action="#{mensagemBean.inverterMensagem}" 
+				value="Enviar"/>
+			
+		</h:form>
+		
+	</body>
+</html>
