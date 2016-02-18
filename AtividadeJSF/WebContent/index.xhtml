@@ -11,17 +11,14 @@
 	<body>
 		
 		<h:form>
-			Mensagem 1: <h:inputText value="${mensagemBean.mensagem1}">
+			<h:inputText value="${usuarioBean.a}">
 			</h:inputText>
-			
-			Mensagem 2: <h:inputText value="${mensagemBean.mensagem2}">
-			</h:inputText>
-			
-			<h:commandButton id="inverter" 
-				action="#{mensagemBean.inverterMensagem}" 
+			<h:commandButton id="listar" 
+				action="${usuarioBean.listarUsuarios}" 
 				value="Enviar"/>
 			
 		</h:form>
+		
 		
 	</body>
 </html>

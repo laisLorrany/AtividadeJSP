@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Minha Página</title>
+	</head>
+	<body>
+		<h:dataTable value="#{usuarioBean.usuarios}" var="usuario" rules="rows">
+	
+			<f:facet name="header">Listagem dos Usuários</f:facet>
+			<f:facet name="footer">Fim da listagem</f:facet>
+			<h:column>
+				<f:facet name="header">Nome do usuário</f:facet>${usuario.nome}  
+	        </h:column>
+			<h:column>
+				<f:facet name="header">Matrícula</f:facet>${usuario.matricula}  
+	         </h:column>
+			<h:column>
+				<f:facet name="header">Nascimento</f:facet>${usuario.nascimento}  
+	        </h:column>
+		</h:dataTable>
+	
+</body>
+</html>
